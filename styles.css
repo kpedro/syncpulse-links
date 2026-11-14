@@ -1,0 +1,12 @@
+html, body { margin: 0; padding: 0; height: 100%; background: #0b1b46; }
+#app { min-height: 100%; }
+#app > .spl-page { min-height: 100vh; min-height: 100dvh; padding-top: max(40px, env(safe-area-inset-top)); }
+.sk { background: rgba(255, 255, 255, 0.14); border-radius: 12px; animation: sk-pulse 1.2s ease-in-out infinite; }
+.spl-skeleton .spl-avatar { border-color: transparent; box-shadow: none; }
+.sk-line { height: 16px; margin: 10px auto 0; }
+.sk-w60 { width: 60%; height: 22px; }
+.sk-w40 { width: 40%; }
+.sk-btn { height: 56px; border-radius: 999px; }
+.spl-notice { text-align: center; font-size: 0.85rem; opacity: 0.75; margin: -12px 0 20px; }
+@keyframes sk-pulse { 0%, 100% { opacity: 0.55; } 50% { opacity: 1; } }
+@media (prefers-reduced-motion: reduce) { .sk { animation: none; } }
